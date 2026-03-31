@@ -43,10 +43,33 @@
         <a href="https://forms.gle/htkQRPMPT5XT4Lc36" target="_blank">お問い合わせフォームはこちら</a>
     </section>
 
-    <section id="privacy">
-        <h2>プライバシーポリシー</h2>
-        <p>当アプリでは、広告配信のためにGoogle AdMob、アプリ内課金のためにApple StoreKitを使用しています。ユーザーの個人情報を収集・送信することはありません。</p>
-    </section>
+
+    <h2>プライバシーポリシー</h2>
+            <p>本アプリケーション（以下、「当アプリ」といいます）におけるユーザー情報の取扱いについて、以下の通り定めます。</p>
+            
+            <h3>1. 収集する情報と利用目的</h3>
+            <p>当アプリでは、サービス提供および改善のために以下の第三者サービスを利用しており、各サービス提供者が自動的に情報を収集する場合があります。</p>
+            <ul class="link-list">
+                <li><strong>Google AdMob（広告配信）</strong><br>目的：ユーザーに最適化された広告の表示<br><a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Google 広告規約とプライバシー</a></li>
+                <li><strong>Apple StoreKit（アプリ内課金）</strong><br>目的：購入情報の管理および有効性確認<br><a href="https://www.apple.com/jp/legal/privacy/jp/" target="_blank">Apple プライバシーポリシー</a></li>
+            </ul>
+
+            <h3>2. 個人情報の取扱について</h3>
+            <p>当アプリは、ユーザーの氏名や連絡先などの個人情報を直接収集・保存することはありません。また、法令に基づく場合を除き、取得した情報を第三者に提供することはありません。</p>
+
+            <h3>3. 免責事項</h3>
+            <p>当アプリの利用により生じた損害等について、開発者は一切の責任を負いません。自己責任においてご利用ください。</p>
+        </section>
+
+        <section id="terms">
+            <h2>利用規約 (Terms of Use)</h2>
+            <p>当アプリの利用規約については、Appleが提供する標準の「ライセンス契約（EULA）」を適用します。また、アプリ内課金（サブスクリプション）についてもこれに準じます。</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple標準利用規約 (EULA) を確認する</a></p>
+        </section>
+
+        <footer>
+            <p>制定日：2026年3月31日</p>
+        </footer>
 
     <section id="copyright">
         <h2>著作権</h2>
