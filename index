@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推しイベカレンダー サポート・ポリシー</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        /* 推し色（ピンク）の例 */
+        h2 {
+            border-bottom: 2px solid #ff69b4;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>推しイベカレンダー</h1>
+
+    <section id="support">
+        <h2>サポート (Support)</h2>
+        <p>アプリに関する不具合やお問い合わせは、以下のGoogleフォームよりご連絡ください。</p>
+        <a href="https://forms.gle/htkQRPMPT5XT4Lc36" target="_blank">お問い合わせフォームはこちら</a>
+    </section>
+
+    <section id="privacy">
+        <h2>プライバシーポリシー</h2>
+        <p>当アプリでは、広告配信のためにGoogle AdMob、アプリ内課金のためにApple StoreKitを使用しています。ユーザーの個人情報を収集・送信することはありません。</p>
+    </section>
+
+    <section id="copyright">
+        <h2>著作権</h2>
+        <p>© 2026 TAISEI NAKATSUJI</p>
+    </section>
+</body>
+
+</html>
