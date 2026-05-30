@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>推しイベカレンダー サポート・ポリシー</title>
+    <title>OshiEventCalendar Support & Policy</title>
     <style>
         body {
             font-family: sans-serif;
@@ -15,6 +15,31 @@
             color: #333;
         }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff69b4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff69b4;
+            margin: 0;
+        }
+
+        .lang-select-container {
+            display: block;
+        }
+
+        select {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
         section {
             margin-bottom: 40px;
             padding: 20px;
@@ -22,29 +47,85 @@
             border-radius: 8px;
         }
 
-        h1 {
-            color: #ff69b4;
-        }
-
-        /* 推し色（ピンク）の例 */
         h2 {
             border-bottom: 2px solid #ff69b4;
             padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        /* Show default language (en) */
+        [lang="en"].lang-section {
+            display: block;
+        }
+        
+        ul.link-list {
+            padding-left: 20px;
+        }
+        
+        ul.link-list li {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 
 <body>
-    <h1>推しイベカレンダー</h1>
+    <header>
+        <h1 class="lang-section" lang="en">OshiEventCalendar</h1>
+        <h1 class="lang-section" lang="ja">推しイベカレンダー</h1>
+        
+        <div class="lang-select-container">
+            <select id="langSelect" onchange="switchLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </header>
 
+    <!-- SUPPORT SECTION -->
     <section id="support">
-        <h2>サポート (Support)</h2>
-        <p>アプリに関する不具合やお問い合わせは、以下のGoogleフォームよりご連絡ください。</p>
-        <a href="https://forms.gle/htkQRPMPT5XT4Lc36" target="_blank">お問い合わせフォームはこちら</a>
+        <!-- English Content -->
+        <div class="lang-section" lang="en">
+            <h2>Support</h2>
+            <p>If you encounter any issues or have inquiries regarding the app, please contact us using the Google Form below.</p>
+            <p><a href="https://forms.gle/htkQRPMPT5XT4Lc36" target="_blank">Inquiry Form</a></p>
+        </div>
+        
+        <!-- Japanese Content -->
+        <div class="lang-section" lang="ja">
+            <h2>サポート (Support)</h2>
+            <p>アプリに関する不具合やお問い合わせは、以下のGoogleフォームよりご連絡ください。</p>
+            <p><a href="https://forms.gle/htkQRPMPT5XT4Lc36" target="_blank">お問い合わせフォームはこちら</a></p>
+        </div>
     </section>
 
+    <!-- PRIVACY POLICY SECTION -->
+    <section id="privacy">
+        <!-- English Content -->
+        <div class="lang-section" lang="en">
+            <h2>Privacy Policy</h2>
+            <p>This Privacy Policy specifies how user information is handled in this application (hereinafter referred to as "the App").</p>
+            
+            <h3>1. Information Collection and Purpose of Use</h3>
+            <p>The App utilizes the following third-party services to provide and improve our services, and these service providers may automatically collect information:</p>
+            <ul class="link-list">
+                <li><strong>Google AdMob (Ad Distribution)</strong><br>Purpose: Displaying optimized advertisements to users<br><a href="https://policies.google.com/technologies/ads?hl=en" target="_blank">Google Advertising Principles & Privacy</a></li>
+                <li><strong>Apple StoreKit (In-App Purchase)</strong><br>Purpose: Managing purchase information and validating subscription status<br><a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple Privacy Policy</a></li>
+            </ul>
 
-    <h2>プライバシーポリシー</h2>
+            <h3>2. Handling of Personal Information</h3>
+            <p>The App does not directly collect, store, or retain any personal information such as your name or contact details. Furthermore, we do not provide any acquired information to third parties unless required by law.</p>
+
+            <h3>3. Disclaimer</h3>
+            <p>The developer assumes no responsibility or liability for any damages or losses incurred through the use of the App. Please use the App at your own risk.</p>
+        </div>
+        
+        <!-- Japanese Content -->
+        <div class="lang-section" lang="ja">
+            <h2>プライバシーポリシー</h2>
             <p>本アプリケーション（以下、「当アプリ」といいます）におけるユーザー情報の取扱いについて、以下の通り定めます。</p>
             
             <h3>1. 収集する情報と利用目的</h3>
@@ -59,22 +140,76 @@
 
             <h3>3. 免責事項</h3>
             <p>当アプリの利用により生じた損害等について、開発者は一切の責任を負いません。自己責任においてご利用ください。</p>
-        </section>
+        </div>
+    </section>
 
-        <section id="terms">
+    <!-- TERMS OF USE SECTION -->
+    <section id="terms">
+        <!-- English Content -->
+        <div class="lang-section" lang="en">
+            <h2>Terms of Use</h2>
+            <p>Apple's standard "Licensed Application End User License Agreement (EULA)" applies to the terms of use for this App. In-app purchases (subscriptions) are also subject to these terms.</p>
+            <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Review Apple's Standard EULA</a></p>
+        </div>
+        
+        <!-- Japanese Content -->
+        <div class="lang-section" lang="ja">
             <h2>利用規約 (Terms of Use)</h2>
             <p>当アプリの利用規約については、Appleが提供する標準の「ライセンス契約（EULA）」を適用します。また、アプリ内課金（サブスクリプション）についてもこれに準じます。</p>
             <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple標準利用規約 (EULA) を確認する</a></p>
-        </section>
-
-        <footer>
-            <p>制定日：2026年3月31日</p>
-        </footer>
-
-    <section id="copyright">
-        <h2>著作権</h2>
-        <p>© 2026 TAISEI NAKATSUJI</p>
+        </div>
     </section>
+
+    <!-- COPYRIGHT SECTION -->
+    <section id="copyright">
+        <!-- English Content -->
+        <div class="lang-section" lang="en">
+            <h2>Copyright</h2>
+            <p>© 2026 TAISEI NAKATSUJI</p>
+        </div>
+        
+        <!-- Japanese Content -->
+        <div class="lang-section" lang="ja">
+            <h2>著作権</h2>
+            <p>© 2026 TAISEI NAKATSUJI</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="lang-section" lang="en">Effective Date: March 31, 2026</p>
+        <p class="lang-section" lang="ja">制定日：2026年3月31日</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Update document lang attribute
+            document.documentElement.lang = lang;
+            
+            // Hide all language sections
+            const sections = document.querySelectorAll('.lang-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show sections for the selected language
+            const activeSections = document.querySelectorAll('.lang-section[lang="' + lang + '"]');
+            activeSections.forEach(section => {
+                // headers might use block/flex, sections block. Let's rely on standard block showing or custom tags
+                if (section.tagName === 'H1') {
+                    section.style.display = 'block';
+                } else if (section.tagName === 'P' && section.parentElement.tagName === 'FOOTER') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'block';
+                }
+            });
+        }
+        
+        // Initialize language on load
+        window.onload = function() {
+            switchLanguage('en');
+        };
+    </script>
 </body>
 
 </html>
